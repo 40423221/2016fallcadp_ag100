@@ -322,8 +322,6 @@ init_mathjax();
 </footer><!-- /.post-info -->                    </div>
                 </div>
                 <p>在分組倉儲中, 導入 scrum-1 py 目錄中的 scrum-1.js</p>
-<script src="./../scrum-1/py/scrum-1.js"></script>
-
 
 
 <!-- 導入 Brython 標準程式庫 -->
@@ -340,6 +338,8 @@ brython(1);
 }
 </script>
 
+<script src="./../scrum-1/py/scrum-1.js" id="script0"></script>
+
 <!-- 以下利用 Brython 程式執行檔案讀取與比對流程 -->
 
 <!-- 假如需要用圖型表示數字, 則利用 canvas 繪圖 -->
@@ -351,9 +351,11 @@ brython(1);
 
 <script type="text/python3" id="script1">
 from browser import document, html
+import script0
+
 container1 = document['container1']
 
-container1 <= test()
+container1 <= script0.test()
 </script>
             </div>
             <!-- /.entry-content -->
