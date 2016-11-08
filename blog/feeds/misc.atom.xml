@@ -16,6 +16,15 @@ brython({debug:1, pythonpath:['./../scrum-1/py']});
 }
 &lt;/script&gt;
 
+&lt;pre class="brush: python"&gt;
+&lt;!-- 啟動 Brython --&gt;
+&lt;script&gt;
+window.onload=function(){
+brython({debug:1, pythonpath:['./../scrum-1/py']});
+}
+&lt;/script&gt;
+&lt;/pre&gt;
+
 &lt;!-- 以下利用 Brython 程式執行檔案讀取與比對流程 --&gt;
 
 &lt;!-- 假如需要用圖型表示數字, 則利用 canvas 繪圖 --&gt;
